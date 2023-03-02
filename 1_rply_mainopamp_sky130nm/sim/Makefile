@@ -1,0 +1,4 @@
+include ../tech/make/sim.make
+
+LIB=RPLY_MAINOPAMP_SKY130NM
+CELL=RPLY_MAINOPAMP
