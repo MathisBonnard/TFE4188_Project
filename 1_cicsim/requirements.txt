@@ -1,0 +1,9 @@
+tabulate
+click
+matplotlib
+pyyaml
+pandas
+wheel
+setuptools
+numpy
+tikzplotlib
