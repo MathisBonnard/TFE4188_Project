@@ -70,7 +70,7 @@ def run(testbench,oformat,run,corner,count,name):
     r.run()
 
 
-@cli.command()
+@cli.command() 
 @click.argument("filename")
 @click.argument("xname")
 @click.argument("yname")
