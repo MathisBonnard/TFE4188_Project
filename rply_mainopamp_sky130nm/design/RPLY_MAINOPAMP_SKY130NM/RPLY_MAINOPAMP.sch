@@ -144,7 +144,7 @@ lab=VSS}
 C {cborder/border_s.sym} 520 0 0 0 {
 user="wulff"
 company="wulff"}
-C {sky130_fd_pr/pfet_01v8.sym} -230 -460 0 1 {name=Q8
+C {sky130_fd_pr/pfet_01v8.sym} -230 -460 0 1 {name=Q8[29:0]
 L=0.3
 W=3
 nf=1
@@ -158,7 +158,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 30 -460 0 0 {name=Q5
+C {sky130_fd_pr/pfet_01v8.sym} 30 -460 0 0 {name=Q5[2:0]
 L=0.3
 W=30
 nf=1
@@ -172,7 +172,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 430 -460 0 0 {name=Q6
+C {sky130_fd_pr/pfet_01v8.sym} 430 -460 0 0 {name=Q6[1:0]
 L=0.3
 W=45
 nf=1
@@ -186,7 +186,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} -50 -310 0 0 {name=Q1
+C {sky130_fd_pr/pfet_01v8.sym} -50 -310 0 0 {name=Q1[2:0]
 L=0.3
 W=36
 nf=1
@@ -200,7 +200,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 150 -310 0 1 {name=Q2
+C {sky130_fd_pr/pfet_01v8.sym} 150 -310 0 1 {name=Q2[2:0]
 L=0.3
 W=36
 nf=1
@@ -214,7 +214,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 110 -210 0 0 {name=Q4
+C {sky130_fd_pr/nfet_01v8.sym} 110 -210 0 0 {name=Q4[19:0]
 L=0.3
 W=6
 nf=1 
@@ -228,7 +228,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} -10 -210 0 1 {name=Q3
+C {sky130_fd_pr/nfet_01v8.sym} -10 -210 0 1 {name=Q3[19:0]
 L=0.3
 W=6
 nf=1 
@@ -242,7 +242,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 430 -210 0 0 {name=Q7
+C {sky130_fd_pr/nfet_01v8.sym} 430 -210 0 0 {name=Q7[4:0]
 L=0.3
 W=18
 nf=1 
@@ -256,19 +256,19 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/cap_mim_m3_2.sym} 370 -260 1 0 {name=Cc model=cap_mim_m3_2 W=10 L=10 MF=10 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 370 -260 1 0 {name=Cc model=cap_mim_m3_2 W=100 L=100 MF=5 spiceprefix=X}
 C {devices/opin.sym} 550 -340 0 0 {name=p4 lab=Vout}
 C {devices/ipin.sym} -90 -310 0 0 {name=p5 lab=VinMinus}
 C {devices/ipin.sym} 200 -310 0 1 {name=p6 lab=VinPlus}
 C {sky130_fd_pr/res_high_po.sym} -250 -240 0 0 {name=R1
-W=0.1
-L=37.8
+W=0.6
+L=226.8
 model=res_high_po
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_high_po.sym} 270 -260 3 0 {name=R2
-W=1
-L=1
+W=100
+L=100
 model=res_high_po
 spiceprefix=X
 mult=1}

@@ -292,7 +292,7 @@ class Simulation(cs.CdsConfig):
             for mg in m.groups():
                 self.comment("Replacing  {cic%s} = %s" %(mg,self.__dict__[mg]))
 
-                line = line.replace("{cic%s}" %mg,self.__dict__[mg])
+                line = line.replace("{cic%s}" %mg,str(self.__dict__[mg]))
         return line
 
 class CmdRunNg(cs.CdsConfig):
