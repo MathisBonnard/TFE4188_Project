@@ -1,0 +1,78 @@
+cicsimgen tran
+
+*Nothing here
+
+.lib  "/opt/pdk/share/pdk/sky130B/libs.tech/ngspice/sky130.lib.spice" tt
+
+.lib "../../../tech/ngspice/temperature.spi" Tt
+
+.lib "../../../tech/ngspice/supply.spi" Vt
+
+
+*TB_SUN_TR_SKY130NM/TB_NCM
+*----------------------------------------------------------------
+* Include
+*----------------------------------------------------------------
+.include ../../../work/xsch/RPLY_MAINOPAMP.spice
+
+*-----------------------------------------------------------------
+* OPTIONS
+*-----------------------------------------------------------------
+.option TNOM=27 GMIN=1e-15 reltol=1e-6 abstol=1e-6 keepopinfo noopiter gminsteps=5
+
+*-----------------------------------------------------------------
+* PARAMETERS
+*-----------------------------------------------------------------
+.param TRF = 10p
+
+.param AVDD = {vdda}
+
+*-----------------------------------------------------------------
+* FORCE
+*-----------------------------------------------------------------
+VSS   VSS      0    dc  -0.9
+*VDD  VDD_1V8  VSS  pwl 0 0 10n {AVDD}
+VDD   VDD_1V8  VSS  dc  1.8
+
+*Vin_pos VinPlus 0 dc -0.9
+*Vin_pos VinPlus 0 sin (0 0.1 10G 0 0)
+Vin_pos VinPlus 0  dc 0 ac 0.1
+
+*Vin_neg VinMinus VSS dc 0.9
+*-----------------------------------------------------------------
+* DUT
+*-----------------------------------------------------------------
+XDUT VDD_1V8 VSS Vout VinMinus VinPlus RPLY_MAINOPAMP
+
+*----------------------------------------------------------------
+* MEASURES
+*----------------------------------------------------------------
+
+
+*----------------------------------------------------------------
+* PROBE
+*----------------------------------------------------------------
+
+.save v(VDD_1V8) v(VSS) v(Vout) v(VinMinus) v(VinPlus) v(VinPlus.ipin)
+
+*----------------------------------------------------------------
+* NGSPICE control
+*----------------------------------------------------------------
+.control
+set num_threads=8
+set color0=white
+set color1=black
+unset askquit
+
+optran 0 0 0 100p 2n 0
+
+*tran 100f 100n
+ac dec 100 1 100MEG
+*dc Vin_pos -0.9 0.9 0.01
+write
+quit
+
+.endc
+
+.end
+

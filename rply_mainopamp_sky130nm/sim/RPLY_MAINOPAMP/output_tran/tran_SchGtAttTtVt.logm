@@ -1,0 +1,26 @@
+Note: No ".plot", ".print", or ".fourier" lines; no simulations run
+
+Note: No compatibility mode selected!
+
+
+Circuit: * measure rply_mainopamp
+
+Loading raw data file ("tran_SchGtAttTtVt.raw") ...
+done.
+Title:  cicsimgen tran
+Name: AC Analysis
+Date: Tue Mar 28 21:00:24  2023
+
+Here are the vectors currently active:
+
+Title: cicsimgen tran
+Name: ac1 (AC Analysis)
+Date: Tue Mar 28 21:00:24  2023
+
+    frequency           : frequency, complex, 801 long, grid = xlog [default scale]
+    v(vdd_1v8)          : voltage, complex, 801 long
+    v(vinplus)          : voltage, complex, 801 long
+    v(vout)             : voltage, complex, 801 long
+    v(vss)              : voltage, complex, 801 long
+MEAS_START
+MEAS_END

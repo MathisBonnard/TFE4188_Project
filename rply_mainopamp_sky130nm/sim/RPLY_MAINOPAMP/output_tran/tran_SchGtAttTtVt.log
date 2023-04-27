@@ -1,0 +1,54 @@
+Warning: Model issue on line 0 :
+  .model xdut.xr1:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+Warning: Model issue on line 0 :
+  .model xdut.xr1:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+Warning: Model issue on line 0 :
+  .model xdut.xr2:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+Warning: Model issue on line 0 :
+  .model xdut.xr2:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+Warning: Step size potentially too small.
+Note: Transient op started
+Note: Transient op finished successfully
+ Reference value :  0.00000e+00******
+** ngspice-39 : Circuit level simulation program
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2022, The ngspice team.
+** Please get your ngspice manual from http://ngspice.sourceforge.net/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Fri Mar 10 12:27:17 UTC 2023
+******
+
+Note: No compatibility mode selected!
+
+
+Circuit: cicsimgen tran
+
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+
+No. of Data Rows : 801
+binary raw file "tran_SchGtAttTtVt.raw"
+ngspice-39 done

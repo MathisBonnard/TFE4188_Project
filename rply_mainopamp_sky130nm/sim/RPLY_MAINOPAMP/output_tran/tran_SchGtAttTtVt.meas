@@ -1,0 +1,9 @@
+* Measure RPLY_MAINOPAMP
+.control
+
+load tran_SchGtAttTtVt.raw
+
+echo "MEAS_START"
+
+echo "MEAS_END"
+.endc
