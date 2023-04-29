@@ -1,0 +1,101 @@
+#<name>:
+#  src:
+#    - <paramters>
+#  typ: <typical spec value>
+#  name: <long name>
+#  min: <minimum spec value>
+#  max: <maximum spec value>
+#  scale: <scale, multiply result by scale>
+#  digits: <significant digits>
+#  unit: Unit
+
+V_drop:
+  src:
+    - vres
+  name: Voltage drop resistor
+  min: 44.7618
+  typ: 54.7618
+  max: 64.7618
+  scale: 1e3
+  digits: 4
+  unit: mV
+  
+V_top:
+  src:
+    - ouais
+  name: Potential at top resistor
+  min: 44.7618
+  typ: 54.7618
+  max: 64.7618
+  scale: 1e3
+  digits: 4
+  unit: mV
+
+# Voutt:
+  # src:
+    # - voutpp
+  # name: Output tensionn
+  # min: 44.7618
+  # typ: 54.7618
+  # max: 64.7618
+  # scale: 1e3
+  # digits: 4
+  # unit: mV
+  
+  
+  
+
+# I1:
+  # src:
+    # - i_leftmost
+  # name: Left current
+  # min: -20%
+  # typ: 100
+  # max: 20%
+  # scale: 1e9
+  # digits: 4
+  # unit: nA
+
+# I2:
+  # src:
+    # - i_rightmost
+  # name: Right current
+  # min: -20%
+  # typ: 100
+  # max: 20%
+  # scale: 1e6
+  # digits: 4
+  # unit: µA
+  
+# I_difference:
+  # src:
+    # - diff_i
+  # name: Currents difference
+  # min: -0.5547
+  # typ: 0
+  # max: 0.7056
+  # scale: 1e9
+  # digits: 4
+  # unit: nA
+
+# V_difference:
+  # src:
+    # - diff_v
+  # name: OpAmp input tension difference
+  # min: -10
+  # typ: 0
+  # max: 10
+  # scale: 1e3
+  # digits: 4
+  # unit: mV
+
+# Vgate:
+  # src:
+    # - vgate
+  # name: Gate tension
+  # min: 356.7082
+  # typ: 365.3225
+  # max: 376.1640
+  # scale: 1e3
+  # digits: 4
+  # unit: mV
