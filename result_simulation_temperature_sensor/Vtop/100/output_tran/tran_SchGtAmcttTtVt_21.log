@@ -1,0 +1,95 @@
+Warning: Model issue on line 0 :
+  .model xdut.x1.xr1:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000 ...
+unrecognized parameter (sw_et) - ignored
+Warning: Model issue on line 0 :
+  .model xdut.x1.xr1:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000 ...
+unrecognized parameter (sw_et) - ignored
+Warning: Model issue on line 0 :
+  .model xdut.x1.xr2:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000 ...
+unrecognized parameter (sw_et) - ignored
+Warning: Model issue on line 0 :
+  .model xdut.x1.xr2:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000 ...
+unrecognized parameter (sw_et) - ignored
+Warning: Model issue on line 0 :
+  .model xdut.xr1:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+Warning: Model issue on line 0 :
+  .model xdut.xr1:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+Warning: Step size potentially too small.
+Note: Transient op started
+Note: Transient op finished successfully
+******
+** ngspice-39 : Circuit level simulation program
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2022, The ngspice team.
+** Please get your ngspice manual from http://ngspice.sourceforge.net/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Fri Mar 10 12:27:17 UTC 2023
+******
+
+Note: No compatibility mode selected!
+
+
+Circuit: cicsimgen tran
+
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+Doing analysis at TEMP = 100.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vss                                          0
+vdd_1v8                                    1.8
+xdut.x1.net5                           1.57729
+xdut.x1.net1<2>                        1.45835
+xdut.x1.net1<1>                        1.45978
+xdut.x1.net1<0>                        1.46103
+xdut.net1                             0.566838
+xdut.x1.net2<2>                       0.328396
+xdut.net2                             0.742865
+xdut.x1.net2<1>                       0.326797
+xdut.x1.net2<0>                       0.362256
+xdut.x1.net3                            0.5685
+vtop                                  0.947237
+xdut.x1.xcc.a                         0.560167
+xdut.x1.xcc.b1                        0.560168
+xdut.x1.net4                          0.560168
+xdut.x1.xr1.rb                      0.00589606
+xdut.x1.xr2.rb                        0.560256
+vbot                                  0.652558
+xdut.xr1.rb                           0.679601
+vdd#branch                         -0.00063436
+vss#branch                        -2.71839e-12
+
+ Reference value :  0.00000e+00 Reference value :  5.66400e-07 Reference value :  1.25640e-06 Reference value :  1.95640e-06 Reference value :  2.66640e-06 Reference value :  3.37640e-06 Reference value :  4.06140e-06 Reference value :  4.78140e-06 Reference value :  5.45140e-06 Reference value :  6.16140e-06 Reference value :  6.86140e-06 Reference value :  7.55640e-06 Reference value :  8.26140e-06 Reference value :  8.95640e-06 Reference value :  9.67140e-06
+No. of Data Rows : 2008
+binary raw file "tran_SchGtAmcttTtVt_21.raw"
+ngspice-39 done

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>README</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide section level3">
+
+<p>TB_NCM</p>
+</div>
+<div id="transient-analysis-tran" class="slide section level3">
+<h1>Transient analysis (tran)</h1>
+<p>Check transient operation</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"><strong>Name</strong></th>
+<th align="left"><strong>Parameter</strong></th>
+<th align="left"><strong>Description</strong></th>
+<th align="right"></th>
+<th align="center"><strong>Min</strong></th>
+<th align="center"><strong>Typ</strong></th>
+<th align="center"><strong>Max</strong></th>
+<th align="right">Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Output tension</strong></td>
+<td align="left"><strong>vres</strong></td>
+<td align="left"></td>
+<td align="right"><strong>Spec</strong></td>
+<td align="center"><strong>44.7618</strong></td>
+<td align="center"><strong>54.7618</strong></td>
+<td align="center"><strong>64.7618</strong></td>
+<td align="right"><strong>mV</strong></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_typical.html'>Sch_typ</a></td>
+<td align="center"></td>
+<td align="center">55.3700</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_etc.html'>Sch_etc</a></td>
+<td align="center">52.7859</td>
+<td align="center">57.2878</td>
+<td align="center">62.7022</td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_mc.html'>Sch_3std</a></td>
+<td align="center">44.8057</td>
+<td align="center">55.8541</td>
+<td align="center"><span style="color:red"><strong>66.9025</strong></span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Left current</strong></td>
+<td align="left"><strong>i_leftmost</strong></td>
+<td align="left"></td>
+<td align="right"><strong>Spec</strong></td>
+<td align="center"><strong>80.0000</strong></td>
+<td align="center"><strong>100.0000</strong></td>
+<td align="center"><strong>120.0000</strong></td>
+<td align="right"><strong>nA</strong></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_typical.html'>Sch_typ</a></td>
+<td align="center"></td>
+<td align="center"><span style="color:red"><strong>-1.2812</strong></span></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_etc.html'>Sch_etc</a></td>
+<td align="center"><span style="color:red"><strong>-4.4155</strong></span></td>
+<td align="center"><span style="color:red"><strong>0.3872</strong></span></td>
+<td align="center"><span style="color:red"><strong>3.7680</strong></span></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_mc.html'>Sch_3std</a></td>
+<td align="center"><span style="color:red"><strong>-2.0179</strong></span></td>
+<td align="center"><span style="color:red"><strong>-1.2946</strong></span></td>
+<td align="center"><span style="color:red"><strong>-0.5713</strong></span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Currents difference</strong></td>
+<td align="left"><strong>diff_i</strong></td>
+<td align="left"></td>
+<td align="right"><strong>Spec</strong></td>
+<td align="center"><strong>-0.5547</strong></td>
+<td align="center"><strong>0.0000</strong></td>
+<td align="center"><strong>0.7056</strong></td>
+<td align="right"><strong>nA</strong></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_typical.html'>Sch_typ</a></td>
+<td align="center"></td>
+<td align="center"><span style="color:red"><strong>-2.0318</strong></span></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_etc.html'>Sch_etc</a></td>
+<td align="center"><span style="color:red"><strong>-3.1267</strong></span></td>
+<td align="center">-0.0878</td>
+<td align="center"><span style="color:red"><strong>1.3506</strong></span></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_mc.html'>Sch_3std</a></td>
+<td align="center"><span style="color:red"><strong>-2.6173</strong></span></td>
+<td align="center"><span style="color:red"><strong>-1.9901</strong></span></td>
+<td align="center"><span style="color:red"><strong>-1.3629</strong></span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>OpAmp input tension difference</strong></td>
+<td align="left"><strong>diff_v</strong></td>
+<td align="left"></td>
+<td align="right"><strong>Spec</strong></td>
+<td align="center"><strong>-10.0000</strong></td>
+<td align="center"><strong>0.0000</strong></td>
+<td align="center"><strong>10.0000</strong></td>
+<td align="right"><strong>mV</strong></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_typical.html'>Sch_typ</a></td>
+<td align="center"></td>
+<td align="center">2.9649</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_etc.html'>Sch_etc</a></td>
+<td align="center">0.5421</td>
+<td align="center">4.8206</td>
+<td align="center">9.9265</td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_mc.html'>Sch_3std</a></td>
+<td align="center">-6.9416</td>
+<td align="center">3.4005</td>
+<td align="center"><span style="color:red"><strong>13.7425</strong></span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Gate tension</strong></td>
+<td align="left"><strong>vgate</strong></td>
+<td align="left"></td>
+<td align="right"><strong>Spec</strong></td>
+<td align="center"><strong>356.7082</strong></td>
+<td align="center"><strong>365.3225</strong></td>
+<td align="center"><strong>376.1640</strong></td>
+<td align="right"><strong>mV</strong></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_typical.html'>Sch_typ</a></td>
+<td align="center"></td>
+<td align="center"><span style="color:red"><strong>632.9693</strong></span></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_etc.html'>Sch_etc</a></td>
+<td align="center"><span style="color:red"><strong>592.5671</strong></span></td>
+<td align="center"><span style="color:red"><strong>630.0419</strong></span></td>
+<td align="center"><span style="color:red"><strong>667.3852</strong></span></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_mc.html'>Sch_3std</a></td>
+<td align="center"><span style="color:red"><strong>617.2001</strong></span></td>
+<td align="center"><span style="color:red"><strong>632.2938</strong></span></td>
+<td align="center"><span style="color:red"><strong>647.3875</strong></span></td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

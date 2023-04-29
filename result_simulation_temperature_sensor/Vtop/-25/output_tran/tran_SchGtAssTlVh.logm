@@ -1,0 +1,29 @@
+Note: No ".plot", ".print", or ".fourier" lines; no simulations run
+
+Note: No compatibility mode selected!
+
+
+Circuit: * measure rply_tempsens
+
+Loading raw data file ("tran_SchGtAssTlVh.raw") ...
+done.
+Title:  cicsimgen tran
+Name: Transient Analysis
+Date: Fri Apr 28 12:07:37  2023
+
+Here are the vectors currently active:
+
+Title: cicsimgen tran
+Name: tran1 (Transient Analysis)
+Date: Fri Apr 28 12:07:37  2023
+
+    time                : time, real, 2008 long [default scale]
+    v(vbot)             : voltage, real, 2008 long
+    v(vdd_1v8)          : voltage, real, 2008 long
+    v(vss)              : voltage, real, 2008 long
+    v(vtop)             : voltage, real, 2008 long
+MEAS_START
+ouais               =  8.608311e-01
+vres                =  4.224062e-02
+vdd_1v8             =  1.800000e+00
+MEAS_END

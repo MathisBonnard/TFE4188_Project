@@ -1,0 +1,18 @@
+* Measure RPLY_TEMPSENS
+.control
+
+load tran_SchGtAssTlVh.raw
+
+echo "MEAS_START"
+
+let vres = vtop-vbot
+let topitopou = vtop
+
+
+meas tran ouais   find topitopou   at=9u
+meas tran vres find vres at=9u
+
+meas tran vdd_1v8 find VDD_1v8 at=9u
+
+echo "MEAS_END"
+.endc

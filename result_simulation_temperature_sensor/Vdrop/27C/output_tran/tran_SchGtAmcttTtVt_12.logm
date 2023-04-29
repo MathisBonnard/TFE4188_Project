@@ -1,0 +1,37 @@
+Note: No ".plot", ".print", or ".fourier" lines; no simulations run
+
+Note: No compatibility mode selected!
+
+
+Circuit: * measure rply_tempsens
+
+Loading raw data file ("tran_SchGtAmcttTtVt_12.raw") ...
+done.
+Title:  cicsimgen tran
+Name: Transient Analysis
+Date: Sun Apr 23 21:53:56  2023
+
+Here are the vectors currently active:
+
+Title: cicsimgen tran
+Name: tran1 (Transient Analysis)
+Date: Sun Apr 23 21:53:56  2023
+
+    i(v.xdut.v1)        : current, real, 2008 long
+    i(v.xdut.v2)        : current, real, 2008 long
+    time                : time, real, 2008 long [default scale]
+    v(vbot)             : voltage, real, 2008 long
+    v(vdd_1v8)          : voltage, real, 2008 long
+    v(vgate)            : voltage, real, 2008 long
+    v(vss)              : voltage, real, 2008 long
+    v(vtop)             : voltage, real, 2008 long
+    v(xdut.inpos)       : voltage, real, 2008 long
+MEAS_START
+vres                =  6.495362e-02
+i_leftmost          =  -5.740288e-09
+i_rightmost         =  -1.847358e-09
+diff_i              =  -3.892930e-09
+diff_v              =  7.217835e-03
+vgate               =  6.614486e-01
+vdd_1v8             =  1.800000e+00
+MEAS_END

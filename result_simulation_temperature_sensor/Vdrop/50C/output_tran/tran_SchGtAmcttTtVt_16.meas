@@ -1,0 +1,22 @@
+* Measure RPLY_TEMPSENS
+.control
+
+load tran_SchGtAmcttTtVt_16.raw
+
+echo "MEAS_START"
+
+let vres = vtop-vbot
+let diff_i = i(v.xdut.v1)-i(v.xdut.v2)
+let diff_v = Vtop-XDUT.inpos
+let i_leftmost = i(v.xdut.v1)
+
+meas tran vres find vres at=9u
+meas tran i_leftmost find i(v.xdut.v1) at=9u
+meas tran i_rightmost find i(v.xdut.v2) at=9u
+meas tran diff_i find diff_i at=9u
+meas tran diff_v find diff_v at=9u
+meas tran Vgate  find Vgate  at=9u
+meas tran vdd_1v8 find VDD_1v8 at=9u
+
+echo "MEAS_END"
+.endc
